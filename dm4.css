@@ -1,0 +1,133 @@
+body {
+
+    font-family: et-book, Palatino, "Palatino Linotype", "Palatino LT STD", "Book Antiqua", Georgia, serif;
+    background-color: #fffff8;
+    color: #111;
+}
+
+h1 {
+    font-weight: 400;
+    margin-top: 4rem;
+    margin-bottom: 1.5rem;
+    font-size: 3.2rem;
+    line-height: 1;
+}
+
+h2 {
+    font-style: italic;
+    font-weight: 400;
+    margin-top: 2.1rem;
+    margin-bottom: 1.4rem;
+    font-size: 2.2rem;
+    line-height: 1;
+}
+
+h3 {
+    font-style: italic;
+    font-weight: 400;
+    font-size: 1.7rem;
+    margin-top: 2rem;
+    margin-bottom: 1.4rem;
+    line-height: 1;
+}
+
+hr {
+    display: block;
+    height: 1px;
+    width: 55%;
+    border: 0;
+    border-top: 1px solid #ccc;
+    margin: 1em 0;
+    padding: 0;
+}
+
+.output {
+    background-color: #8dddff;
+    margin-left: 0px;
+    padding: 10px;
+}
+
+.syntax {
+    background-color: #91ff9c;
+}
+pre, table:has(code) {
+    background-color: #fbfba8;
+    padding: 10px;
+}
+
+.output, .syntax, pre, table:has(code) {
+    width: calc(100% - 60px);
+}
+
+p.navbar:last-of-type {
+    display: none;
+}
+/* blockquote .aside,
+blockquote .marginnote {
+    margin-right: -82%;
+    min-width: 59%;
+    text-align: left;
+} */
+
+hr.footnotebar { height: 1px; color: black; width: 50%; text-align: left; 
+                 margin-top: 1em; margin-bottom: 0em; }
+blockquote {text-align: justify; }
+div.ans {margin-left: 1em; margin-right: 1em; }
+div.ans ul {margin-left: 0; text-align: justify; }
+div.bigclump {margin-top: 1em; margin-bottom: 1em; }
+div.clump {margin-top: 0.5em; margin-bottom: 0.5em; }
+div.inset {margin-left: 30px; margin-top: 1em; margin-bottom: 1em; }
+div.page, navbar {
+    border-top: 1px dashed #DDDDDD;
+	border-bottom: 1px dashed #DDDDDD;
+    margin: auto;
+    max-width: 700px;
+}
+
+
+
+span.atleft {vertical-align: top; float: left;
+            padding-right: 15px; padding-bottom: 7px; padding-top: 3px; }
+p.aside {text-align: justify; font-size: 80%;
+         margin-top: 1em; margin-bottom: 1em; }
+p.chapter {text-align: right; font-variant: small-caps; color: navy; }
+p.dotbreak {text-align: center; color: navy; }
+p.hangindent {margin-top: 0; margin-bottom: 0; margin-left: 30px;
+		  text-indent: -30px; text-align: justify; }
+p.indent {text-indent: 30px; text-align: justify;
+          margin-top: 0; margin-bottom: 0; }
+p.lynxonly {line-height: 0; margin-top: 0; margin-bottom: 0; }
+/* p.navbar {text-align: right; font-variant: small-caps; } */
+p.normal {text-align: justify;
+          margin-top: 0; margin-bottom: 0; }
+p.output {margin-left: 30px; text-align: justify; }
+p.pagenum {text-align: right; }
+p.syntax {margin-left: 30px; }
+p.tokendef {text-align: justify; }
+pre.code {margin-left: 30px; }
+span.grammartoken {border: 1px solid black; padding: 1px; }
+span.token {font-style: italic; }
+table.objtree {margin-top: 1em; margin-bottom: 1em; text-align: center; }
+table.sa2 {width: 100%; margin-top: 1em; margin-bottom: 0em;
+           border-top: 1px solid black; border-bottom: 1px solid black; }
+table.sa2 tr.r1 td.c1 {text-align: left; }
+table.sa2 tr.r1 td.c2 {text-align: right; }
+table.tbl2 td {text-align:center; font-size:larger;
+               padding-left: 5px; padding-right: 5px; }
+table.tbl3 td {text-align:left;
+		   padding-left: 5px; padding-right: 5px; }
+table#s45_tbl1 {margin-top: 1em; margin-bottom: 1em; text-align: center; }
+table#s45_tbl1 tr.row1 td {font-weight: bold; }
+table#s45_tbl1 tr td {padding-left: 5px; padding-right: 5px; }
+table#s45_tbl2 {margin-top: 1em; margin-bottom: 1em; text-align: center; }
+ul.indexlist {list-style-type: none; margin-top: 1em; margin-bottom: 1em;
+	margin-left: 0em; margin-right: 1em; font-size: 11pt; }
+ul.indexlist li {font-size: 11pt; text-align: justify; 
+	   margin-left: 2em; text-indent: -1em; }
+ul.indexlist li ul {list-style-type: none; margin-left: 0em; }
+ul.indexlist li ul li {font-size: 11pt; text-align: justify; 
+	   margin-left: 1em; text-indent: -1em; }
+ul.indexlist li ul li ul {list-style-type: none; margin-left: 0em; }
+ul.indexlist li ul li ul li {font-size: 11pt; text-align: justify; 
+	   margin-left: 1em; text-indent: -1em; }
+.warning {color: #AA3333; font-variant: small-caps; } 
