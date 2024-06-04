@@ -1,6 +1,69 @@
+@import url('https://fonts.googleapis.com/css2?family=Cactus+Classical+Serif&family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Reddit+Mono:wght@200..900&family=Source+Sans+3:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
+
+.reddit-mono{
+  font-family: "Reddit Mono", monospace;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.merriweather-light {
+    font-family: "Merriweather", serif;
+    font-weight: 300;
+    font-style: normal;
+  }
+  
+  .merriweather-regular {
+    font-family: "Merriweather", serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+  .merriweather-bold {
+    font-family: "Merriweather", serif;
+    font-weight: 700;
+    font-style: normal;
+  }
+  
+  .merriweather-black {
+    font-family: "Merriweather", serif;
+    font-weight: 900;
+    font-style: normal;
+  }
+  
+  .merriweather-light-italic {
+    font-family: "Merriweather", serif;
+    font-weight: 300;
+    font-style: italic;
+  }
+  
+  .merriweather-regular-italic {
+    font-family: "Merriweather", serif;
+    font-weight: 400;
+    font-style: italic;
+  }
+  
+  .merriweather-bold-italic {
+    font-family: "Merriweather", serif;
+    font-weight: 700;
+    font-style: italic;
+  }
+  
+  .merriweather-black-italic {
+    font-family: "Merriweather", serif;
+    font-weight: 900;
+    font-style: italic;
+  }
+
 body {
 
-    font-family: et-book, Palatino, "Palatino Linotype", "Palatino LT STD", "Book Antiqua", Georgia, serif;
+    font-family: "Merriweather", serif;
+    font-weight: 350;
+    font-style: normal;
+    line-height: 1.7em;
+
     background-color: #fffff8;
     color: #111;
 }
@@ -43,8 +106,24 @@ hr {
 
 .output {
     background-color: #8dddff;
-    margin-left: 0px;
-    padding: 10px;
+}
+
+pre, code, .syntax, table:has(code), .output, tt {
+  font-family: "Reddit Mono", monospace;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 90%;
+  line-height: 1.3;
+}
+
+p > code, ul > li > code, tt {
+    font-weight: 500;
+    font-size: 100%;
+}
+
+span.warning {
+    display: block;
 }
 
 .syntax {
@@ -52,22 +131,31 @@ hr {
 }
 pre, table:has(code) {
     background-color: #fbfba8;
+
+}
+
+.aside, .output, .syntax, pre, table:has(code) {
     padding: 10px;
+    margin-top: 1.5em;
+    margin-left: auto;
+    margin-right: auto;
+    box-sizing: border-box;
+    width: 99%;
 }
 
-.output, .syntax, pre, table:has(code) {
-    width: calc(100% - 60px);
+pre, .output, .code, .syntax {
+    padding-left: 2em;
 }
-
 p.navbar:last-of-type {
     display: none;
 }
-/* blockquote .aside,
-blockquote .marginnote {
-    margin-right: -82%;
-    min-width: 59%;
-    text-align: left;
-} */
+
+p.aside {
+    text-align: justify; 
+    font-size: 95%;
+    line-height: 1.6em;
+    background-color: #ffe0fc;
+}
 
 hr.footnotebar { height: 1px; color: black; width: 50%; text-align: left; 
                  margin-top: 1em; margin-bottom: 0em; }
@@ -84,12 +172,8 @@ div.page, navbar {
     max-width: 700px;
 }
 
-
-
 span.atleft {vertical-align: top; float: left;
             padding-right: 15px; padding-bottom: 7px; padding-top: 3px; }
-p.aside {text-align: justify; font-size: 80%;
-         margin-top: 1em; margin-bottom: 1em; }
 p.chapter {text-align: right; font-variant: small-caps; color: navy; }
 p.dotbreak {text-align: center; color: navy; }
 p.hangindent {margin-top: 0; margin-bottom: 0; margin-left: 30px;
@@ -97,14 +181,10 @@ p.hangindent {margin-top: 0; margin-bottom: 0; margin-left: 30px;
 p.indent {text-indent: 30px; text-align: justify;
           margin-top: 0; margin-bottom: 0; }
 p.lynxonly {line-height: 0; margin-top: 0; margin-bottom: 0; }
-/* p.navbar {text-align: right; font-variant: small-caps; } */
 p.normal {text-align: justify;
           margin-top: 0; margin-bottom: 0; }
-p.output {margin-left: 30px; text-align: justify; }
 p.pagenum {text-align: right; }
-p.syntax {margin-left: 30px; }
 p.tokendef {text-align: justify; }
-pre.code {margin-left: 30px; }
 span.grammartoken {border: 1px solid black; padding: 1px; }
 span.token {font-style: italic; }
 table.objtree {margin-top: 1em; margin-bottom: 1em; text-align: center; }
@@ -130,4 +210,5 @@ ul.indexlist li ul li {font-size: 11pt; text-align: justify;
 ul.indexlist li ul li ul {list-style-type: none; margin-left: 0em; }
 ul.indexlist li ul li ul li {font-size: 11pt; text-align: justify; 
 	   margin-left: 1em; text-indent: -1em; }
-.warning {color: #AA3333; font-variant: small-caps; } 
+
+       .warning {color: #AA3333; } 
