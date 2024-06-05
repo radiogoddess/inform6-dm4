@@ -107,6 +107,13 @@ hr {
     padding: 0;
 }
 
+table {
+  max-width: 100%;
+}
+
+td {
+  width: 9em;
+}
 .output {
     background-color: #8dddff;
 }
@@ -198,7 +205,7 @@ span.grammartoken {border: 1px solid black; padding: 1px; }
 span.token {font-style: italic; }
 
 
-
+/* 
 table.objtree {margin-top: 1em; margin-bottom: 1em; text-align: center; }
 table.sa2 {width: 100%; margin-top: 1em; margin-bottom: 0em;
            border-top: 1px solid black; border-bottom: 1px solid black; }
@@ -211,7 +218,7 @@ table.tbl3 td {text-align:left;
 table#s45_tbl1 {margin-top: 1em; margin-bottom: 1em; text-align: center; }
 table#s45_tbl1 tr.row1 td {font-weight: bold; }
 table#s45_tbl1 tr td {padding-left: 5px; padding-right: 5px; }
-table#s45_tbl2 {margin-top: 1em; margin-bottom: 1em; text-align: center; }
+table#s45_tbl2 {margin-top: 1em; margin-bottom: 1em; text-align: center; } */
 
 ul.indexlist {list-style-type: none; margin-top: 1em; margin-bottom: 1em;
 	margin-left: 0em; margin-right: 1em; font-size: 11pt; }
@@ -240,20 +247,33 @@ ul.indexlist li ul li ul li {font-size: 11pt; text-align: justify;
     line-height: 1.3;
 
   }
+
+  .aside, .output, .syntax, pre, table:has(code) {
+    padding: 5px;
+    margin: 5px 0;
+  }
+
   .navbar {
     margin: 0 auto;
   }
   p.navbar:last-of-type {
     display:contents;
     margin: 0 auto;
-}
-  * {
-    margin: 0;
   }
-div.page, navbar {
-  border-top: 1px dashed #DDDDDD;
-  border-bottom: 1px dashed #DDDDDD;
-  margin: 0;
-  width: 100%;
+  * { 
+      margin: 0;
+    }
+  div.page, navbar {
+    border-top: 1px dashed #DDDDDD;
+    border-bottom: 1px dashed #DDDDDD;
+    margin: 0;
+    width: 100%;
+  }
+  table {
+    max-width: 100%;
+  }
+
+  pre, .output, .code, .syntax {
+    padding-left: 5px;
+  }
 }
-      
