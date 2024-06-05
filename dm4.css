@@ -263,12 +263,7 @@ ul.indexlist li ul li ul li {font-size: 11pt; text-align: justify;
     margin: 5px 0;
   }
 
-  p.navbar:last-of-type {
-    display: contents;
-    margin: 0 auto;
-  }
-
-  div.page {
+   div.page {
     border-top: 1px dashed #DDDDDD;
     border-bottom: 1px dashed #DDDDDD;
     width: 100%;
