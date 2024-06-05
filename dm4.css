@@ -237,9 +237,11 @@ ul.indexlist li ul li ul li {font-size: 11pt; text-align: justify;
   body {
     font-size: 14pt;
   }
+  
   p.aside {
     font-size: 100%;
   }
+
   pre, code, .syntax, table:has(code), .output, tt {
     font-family: "Reddit Mono", monospace;
     font-optical-sizing: auto;
@@ -260,15 +262,9 @@ ul.indexlist li ul li ul li {font-size: 11pt; text-align: justify;
     margin: 0 auto;
   }
 
-  * { 
-      margin: 5px;
-      padding: 0;
-    }
-  
   div.page {
     border-top: 1px dashed #DDDDDD;
     border-bottom: 1px dashed #DDDDDD;
-    margin: 0;
     width: 100%;
   }
   table {
