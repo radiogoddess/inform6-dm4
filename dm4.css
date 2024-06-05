@@ -238,6 +238,10 @@ ul.indexlist li ul li ul li {font-size: 11pt; text-align: justify;
     font-size: 14pt;
   }
   
+  p {
+    margin-top: 1.5em;
+    margin-bottom: 1.5em;
+  }
   p.aside {
     font-size: 100%;
   }
