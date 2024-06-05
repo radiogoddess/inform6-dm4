@@ -96,6 +96,7 @@ h3 {
 
 hr {
   border: none;
+
 }hr::before {
   content: '* * *';
   display: block;
@@ -127,9 +128,6 @@ p > code, ul > li > code, tt {
     font-size: 100%;
 }
 
-span.warning {
-    display: block;
-}
 
 .syntax {
     background-color: #91ff9c;
@@ -173,11 +171,18 @@ div.bigclump {margin-top: 1em; margin-bottom: 1em; }
 div.clump {margin-top: 0.5em; margin-bottom: 0.5em; }
 div.inset {margin-left: 30px; margin-top: 1em; margin-bottom: 1em; }
 
-div.page, navbar {
+div.page {
     border-top: 1px dashed #DDDDDD;
 	  border-bottom: 1px dashed #DDDDDD;
     margin: auto;
     max-width: 700px;
+}
+
+p.navbar {
+  overflow: hidden;
+  margin: auto;
+  width: 700px;
+  font-size: 150%;
 }
 
 span.atleft {vertical-align: top; float: left;
@@ -269,5 +274,12 @@ ul.indexlist li ul li ul li {font-size: 11pt; text-align: justify;
 
   pre, .output, .code, .syntax {
     padding-left: 5px;
+  }
+
+  p.navbar {
+    overflow: hidden;
+    margin: auto;
+    width: 300px;
+    font-size: 100%;
   }
 }
