@@ -63,7 +63,7 @@ body {
     font-weight: 350;
     font-style: normal;
     line-height: 1.7em;
-
+    font-size: 12pt;
     background-color: #fffff8;
     color: #111;
 }
@@ -234,6 +234,9 @@ ul.indexlist li ul li ul li {font-size: 11pt; text-align: justify;
 
 @media (width <= 700px) {
 
+  body {
+    font-size: 14pt;
+  }
   p.aside {
     font-size: 100%;
   }
@@ -252,17 +255,15 @@ ul.indexlist li ul li ul li {font-size: 11pt; text-align: justify;
     margin: 5px 0;
   }
 
-  .navbar {
-    margin: 0 auto;
-  }
   p.navbar:last-of-type {
-    display:contents;
+    display: contents;
     margin: 0 auto;
   }
   * { 
       margin: 0;
     }
-  div.page, navbar {
+  
+  div.page {
     border-top: 1px dashed #DDDDDD;
     border-bottom: 1px dashed #DDDDDD;
     margin: 0;
@@ -273,7 +274,7 @@ ul.indexlist li ul li ul li {font-size: 11pt; text-align: justify;
   }
 
   pre, .output, .code, .syntax {
-    padding-left: 5px;
+    padding: 2px;
   }
 
   p.navbar {
