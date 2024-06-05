@@ -68,6 +68,11 @@ body {
     color: #111;
 }
 
+p {
+  margin-top: 1.5em;
+  margin-bottom: 1.5em;
+}
+
 h1 {
     font-weight: 400;
     margin-top: 4rem;
@@ -97,10 +102,11 @@ h3 {
 hr {
   border: none;
 
-}hr::before {
+} hr::before {
   content: '* * *';
   display: block;
   text-align: center;
+  padding-top: 1em;
 }
 
 table {
