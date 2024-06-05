@@ -157,10 +157,6 @@ pre, .output, .code, .syntax {
     padding-left: 2em;
 }
 
-p.navbar:last-of-type {
-    display: none;
-}
-
 p.aside {
     text-align: left; 
     font-size: 95%;
