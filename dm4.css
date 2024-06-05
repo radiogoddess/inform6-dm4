@@ -168,7 +168,7 @@ div.clump {margin-top: 0.5em; margin-bottom: 0.5em; }
 div.inset {margin-left: 30px; margin-top: 1em; margin-bottom: 1em; }
 div.page, navbar {
     border-top: 1px dashed #DDDDDD;
-	border-bottom: 1px dashed #DDDDDD;
+	  border-bottom: 1px dashed #DDDDDD;
     margin: auto;
     max-width: 700px;
 }
@@ -178,16 +178,18 @@ span.atleft {vertical-align: top; float: left;
 p.chapter {text-align: right; font-variant: small-caps; color: navy; }
 p.dotbreak {text-align: center; color: navy; }
 p.hangindent {margin-top: 0; margin-bottom: 0; margin-left: 30px;
-		  text-indent: -30px; text-align: justify; }
-p.indent {text-indent: 30px; text-align: justify;
-          margin-top: 0; margin-bottom: 0; }
+		  text-indent: -30px; }
+/* p.indent {text-indent: 30px;
+          margin-top: 0; margin-bottom: 0; } */
 p.lynxonly {line-height: 0; margin-top: 0; margin-bottom: 0; }
-p.normal {text-align: justify;
-          margin-top: 0; margin-bottom: 0; }
+
 p.pagenum {text-align: right; }
 p.tokendef {text-align: justify; }
 span.grammartoken {border: 1px solid black; padding: 1px; }
 span.token {font-style: italic; }
+
+
+
 table.objtree {margin-top: 1em; margin-bottom: 1em; text-align: center; }
 table.sa2 {width: 100%; margin-top: 1em; margin-bottom: 0em;
            border-top: 1px solid black; border-bottom: 1px solid black; }
@@ -201,6 +203,7 @@ table#s45_tbl1 {margin-top: 1em; margin-bottom: 1em; text-align: center; }
 table#s45_tbl1 tr.row1 td {font-weight: bold; }
 table#s45_tbl1 tr td {padding-left: 5px; padding-right: 5px; }
 table#s45_tbl2 {margin-top: 1em; margin-bottom: 1em; text-align: center; }
+
 ul.indexlist {list-style-type: none; margin-top: 1em; margin-bottom: 1em;
 	margin-left: 0em; margin-right: 1em; font-size: 11pt; }
 ul.indexlist li {font-size: 11pt; text-align: justify; 
