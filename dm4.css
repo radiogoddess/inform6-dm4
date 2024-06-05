@@ -192,6 +192,7 @@ p.lynxonly {line-height: 0; margin-top: 0; margin-bottom: 0; }
 p.pagenum {
   text-align: right;
 }
+
 p.tokendef {text-align: justify; }
 span.grammartoken {border: 1px solid black; padding: 1px; }
 span.token {font-style: italic; }
@@ -246,6 +247,13 @@ ul.indexlist li ul li ul li {font-size: 11pt; text-align: justify;
     display:contents;
     margin: 0 auto;
 }
-
+  * {
+    margin: 0;
+  }
+div.page, navbar {
+  border-top: 1px dashed #DDDDDD;
+  border-bottom: 1px dashed #DDDDDD;
+  margin: 0;
+  width: 100%;
 }
       
