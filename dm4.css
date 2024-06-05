@@ -57,6 +57,9 @@
     font-style: italic;
   }
 
+* {
+  box-sizing: border-box;
+}
 body {
 
     font-family: "Merriweather", serif;
@@ -134,7 +137,6 @@ pre, table:has(code) {
 
 }
 
-
 .aside, .output, .syntax, pre, table:has(code) {
     padding: 10px;
     margin-top: 1.5em;
@@ -142,17 +144,20 @@ pre, table:has(code) {
     margin-right: auto;
     box-sizing: border-box;
     width: 99%;
+    text-wrap: wrap;
+    justify: left;
 }
 
 pre, .output, .code, .syntax {
     padding-left: 2em;
 }
+
 p.navbar:last-of-type {
     display: none;
 }
 
 p.aside {
-    text-align: justify; 
+    text-align: left; 
     font-size: 95%;
     line-height: 1.6em;
     background-color: #ffe0fc;
@@ -166,6 +171,7 @@ div.ans ul {margin-left: 0; text-align: justify; }
 div.bigclump {margin-top: 1em; margin-bottom: 1em; }
 div.clump {margin-top: 0.5em; margin-bottom: 0.5em; }
 div.inset {margin-left: 30px; margin-top: 1em; margin-bottom: 1em; }
+
 div.page, navbar {
     border-top: 1px dashed #DDDDDD;
 	  border-bottom: 1px dashed #DDDDDD;
@@ -183,7 +189,9 @@ p.hangindent {margin-top: 0; margin-bottom: 0; margin-left: 30px;
           margin-top: 0; margin-bottom: 0; } */
 p.lynxonly {line-height: 0; margin-top: 0; margin-bottom: 0; }
 
-p.pagenum {text-align: right; }
+p.pagenum {
+  text-align: right;
+}
 p.tokendef {text-align: justify; }
 span.grammartoken {border: 1px solid black; padding: 1px; }
 span.token {font-style: italic; }
@@ -216,3 +224,28 @@ ul.indexlist li ul li ul li {font-size: 11pt; text-align: justify;
 	   margin-left: 1em; text-indent: -1em; }
 
        .warning {color: #AA3333; } 
+
+@media (width <= 700px) {
+
+  p.aside {
+    font-size: 100%;
+  }
+  pre, code, .syntax, table:has(code), .output, tt {
+    font-family: "Reddit Mono", monospace;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 100%;
+    line-height: 1.3;
+
+  }
+  .navbar {
+    margin: 0 auto;
+  }
+  p.navbar:last-of-type {
+    display:contents;
+    margin: 0 auto;
+}
+
+}
+      
