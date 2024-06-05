@@ -72,7 +72,7 @@ north from the Hall of Mists, the library sends a message to an object
 called <code>Hall_of_Mists</code> asking where that would lead, and 
 so on.</p>
 
-<p class="dotbreak">� � � � �</p>
+<hr class="section-break" />
 
 <p class="normal">Typical large story files have so many objects 
 (&#8216;Curses&#8217;, for instance, has 550) that it is convenient to 
@@ -104,7 +104,7 @@ so it might be useful to do this:</p>
 <p class="lynxonly"></p>
 <pre class="code">if (location ofclass DeadEndRoom) &quot;Perhaps you should go back.&quot;;</pre>
 
-<p class="dotbreak">� � � � �</p>
+<hr class="section-break" />
 
 <p class="normal">Items and places in an Inform game always belong 
 to at least one class, whatever you define, because they always belong 
@@ -456,7 +456,7 @@ to the note, which would make a loop: Meadow in note in mailbox
 in Meadow **]</p>
 
 <a id="p63" name="p63"></a>
-<p class="dotbreak">� � � � �</p>
+<hr class="section-break" />
 
 <p class="normal">Since objects move around a good deal, it's useful 
 to be able to test where an object currently is, and the condition 
@@ -481,7 +481,7 @@ allowed to be <code>nothing</code>, and testing <code>X in
 nothing</code> reveals whether or not <code>X</code> has been 
 removed from the rest of the tree.</p>
 
-<p class="dotbreak">� � � � �</p>
+<hr class="section-break" />
 
 <p class="normal">The remaining loop statement left over from 
 <a href="s1.html">&#167;1</a> is <code>objectloop</code>.</p>
@@ -645,7 +645,7 @@ more of a given kind, which Inform will combine together as if they
 had been defined in one go. (This is only likely to be useful for automated 
 Inform-writing programs.)</p>
 
-<p class="dotbreak">� � � � �</p>
+<hr class="section-break" />
 
 <p class="normal">The most important segment is <code>with</code>, which 
 specifies variables and, as we shall see, routines and even arrays, 
@@ -714,7 +714,7 @@ can have their values <em>read</em> (but not changed) even for an
 object which doesn't provide them. All of the properties built into 
 the Inform library are common properties. See <a href="#s3_14">&#167;3.14</a>.</p>
 
-<p class="dotbreak">� � � � �</p>
+<hr class="section-break" />
 
 <p class="normal">When the magpie is created as above, the initial 
 values of</p>
@@ -739,7 +739,7 @@ Object magpie &quot;black-striped bird&quot;
 equal to 5, though <code>magpie.worms_eaten</code> still equal to 0.</p>
 
 <a id="p67" name="p67"></a>
-<p class="dotbreak">� � � � �</p>
+<hr class="section-break" />
 
 <p class="normal">A property can contain a routine instead of a value. 
 In the definition</p>
@@ -1270,7 +1270,7 @@ the designer's 256-megabyte Sun workstation in Venice and then quite
 another on a player's personal organiser in a commuter train in New
 Jersey.</p>
 
-<p class="dotbreak">� � � � �</p>
+<hr class="section-break" />
 
 <p class="normal">If you want to create objects, you need to define 
 a class for them and to specify <i>N</i>, the maximum number ever 
@@ -1360,7 +1360,7 @@ to be zero. Or so that you can at least <code>recreate</code> existing
 members of the class even if you cannot create new ones.</p>
 
 <a id="p77" name="p77"></a>
-<p class="dotbreak">� � � � �</p>
+<hr class="section-break" />
 
 <p class="normal">The following example shows object creation used 
 in a tiny game, dramatising a remark attributed to Isaac Newton (though 
@@ -1417,7 +1417,7 @@ adventure games.) Notice that a newly-created object is in <code>nothing</code>,
 that is, is outside the object tree, so it must be moved to <code>Shingle</code> 
 in order to come to the player's hand.</p>
 
-<p class="dotbreak">� � � � �</p>
+<hr class="section-break" />
 
 <p class="normal">However smooth, one pebble is much like another. More 
 complicated objects sometimes need some setting-up when they are created, 
@@ -1706,7 +1706,7 @@ metaclasses do not inherit from <code>Class</code>.</li>
 <code>Object</code> are read-only and cannot be set.</li>
 </ol>
 
-<p class="dotbreak">� � � � �</p>
+<hr class="section-break" />
 
 <p class="aside">To see what the rules entail means knowing the definitions 
 of the four metaclasses. These definitions are never written out in 

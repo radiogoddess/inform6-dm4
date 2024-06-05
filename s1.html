@@ -447,7 +447,7 @@ Indeed, <code>Rival</code> could even have defined a variable of its
 own also called <code>alpha</code> and this would have been an entirely 
 separate variable.</p>
 
-<p class="dotbreak">� � � � �</p>
+<hr class="section-break" />
 
 <p class="normal">That's now two kinds of name: routines have names 
 and so have variables. Such names, for instance <code>Rival</code> and 
@@ -584,7 +584,7 @@ the range &minus;32,768 to 32,767. For example, 8 multiplied by
 once to bring it into range, and the result is
 &minus;25,216.</p>
 
-<p class="dotbreak">� � � � �</p>
+<hr class="section-break" />
 
 <p class="normal">In a complicated expression the order in which the 
 operators work may affect the result. As most human readers would, Inform 
@@ -651,7 +651,7 @@ to the <code>*</code>.</p>
 <p class="aside"><span class="warning">&#9650;</span>
 Some languages have a &#8220;unary plus&#8221; too, but Inform hasn't.</p>
 
-<p class="dotbreak">� � � � �</p>
+<hr class="section-break" />
 
 <p class="normal">Some operators don't just work out values but actually 
 change the current settings of variables: expressions containing these 
@@ -694,7 +694,7 @@ make <code>4*alpha</code> decrease by 1. All three will cause
 compilation errors.</p>
 
 <a id="p26" name="p26"></a>
-<p class="dotbreak">� � � � �</p>
+<hr class="section-break" />
 
 <p class="normal">The &#8220;bitwise operators&#8221; are provided 
 for manipulating binary numbers on a digit-by-digit basis, something 
@@ -896,7 +896,7 @@ and therefore true (see below), Inform will issue a warning if you try
 to compile something like this. (&#8216;<code>=</code>&#8217; used as condition: 
 &#8216;<code>==</code>&#8217; intended?)</p>
 
-<p class="dotbreak">� � � � �</p>
+<hr class="section-break" />
 
 <p class="normal">Conditions are always given in brackets. There are 
 12 different conditions in Inform (see <a href="tables.html#tbl1a">Table 1</a>), 
@@ -975,7 +975,7 @@ like</p>
 <p class="aside">where you don't want <code>TreasureDeposited</code> 
 to be called with the argument <code>nothing</code>.</p>
 
-<p class="dotbreak">� � � � �</p>
+<hr class="section-break" />
 
 <p class="normal">Conditions are expressions like any other, except 
 that their values are always either <code>true</code> or 
@@ -1002,7 +1002,7 @@ non-zero quantities are considered to represent truth whereas only
 zero represents falsity.</p>
 
 <a id="p31" name="p31"></a>
-<p class="dotbreak">� � � � �</p>
+<hr class="section-break" />
 
 <p class="aside"><span class="warning">&#9650;</span>
 Now that the <code>if</code> statement is available, it's possible 
@@ -1090,7 +1090,7 @@ Other conventions place the open brace vertically above its
 matching closure, perhaps on its own otherwise blank line of source 
 code.</p>
 
-<p class="dotbreak">� � � � �</p>
+<hr class="section-break" />
 
 <p class="normal">An <code>if</code> statement can optionally have the form</p>
 
@@ -1151,7 +1151,7 @@ if (alpha == 1) {
 }
 </pre>
 
-<p class="dotbreak">� � � � �</p>
+<hr class="section-break" />
 
 <p class="normal">The <code>if</code> &#8230; <code>else</code> &#8230; 
 construction is ideal for switching execution between two possible 
@@ -1273,7 +1273,7 @@ repeats the given statement until the condition is found to be <code>true</code>
 Even if the condition is already satisfied, like <code>(true)</code>, 
 the statement is always executed the first time through.</p>
 
-<p class="dotbreak">� � � � �</p>
+<hr class="section-break" />
 
 <p class="normal">One particular kind of <code>while</code> loop is 
 needed so often that there is an abbreviation for it, called 
@@ -1351,7 +1351,7 @@ Comma <code>,</code> is an operator, and moreover is the one with the
 lowest precedence level. The result of <code>a,b</code> is always 
 <code>b</code>, but <code>a</code> and <code>b</code> are both evaluated and in that order.</p>
 
-<p class="dotbreak">� � � � �</p>
+<hr class="section-break" />
 
 <p class="normal">On the face of it, the following loops all repeat 
 forever:</p>
@@ -1386,7 +1386,7 @@ for (i=1: i&lt;=5: i++) {
 <p class="normal">will output &#8220;1 2 4 5&#8221;.</p>
 
 <a id="p37" name="p37"></a>
-<p class="dotbreak">� � � � �</p>
+<hr class="section-break" />
 
 <p class="aside"><span class="warning">&#9650;</span>
 The following routine is a curious example of a loop which, though 
@@ -1484,7 +1484,7 @@ Morse Code chart in &#8216;Jigsaw&#8217;, for instance, where the
 present author inadvertently jumbled the spacing because <code>-d</code> 
 treated the Morse dots as full stops.</p>
 
-<p class="dotbreak">� � � � �</p>
+<hr class="section-break" />
 
 <p class="normal">When a string of text is printed up with <code>print</code>, 
 the characters in the string normally appear exactly as given in the 
@@ -1529,7 +1529,7 @@ so in particular</p>
 <td valign="bottom" style="padding-right:10px"><code>@@126</code></td>
 <td>comes out as &#8220;<code>~</code>&#8221;</td></tr></table>
 
-<p class="dotbreak">� � � � �</p>
+<hr class="section-break" />
 
 <p class="normal">A number of Inform games have been written in European 
 languages other than English, and even English-language games need 
@@ -1596,7 +1596,7 @@ Of course none of these new characters are in the regular ZSCII set,
 but ZSCII is configurable using Inform's Zcharacter directive. 
 See <a href="s36.html">&#167;36</a> for more.</p>
 
-<p class="dotbreak">� � � � �</p>
+<hr class="section-break" />
 
 <p class="aside"><span class="warning">&#9650;</span>
 The remaining usage of <code>@</code> is hacky but powerful. Suppose 
@@ -1746,7 +1746,7 @@ that string&#8221;: it is liable to give an error, or in some cases
 print gibberish, if applied to a value which isn't the mysterious 
 number of any string.</p>
 
-<p class="dotbreak">� � � � �</p>
+<hr class="section-break" />
 
 <p class="normal">Any Inform program can define its own printing rules 
 simply by providing a routine whose name is the same as that of the 
@@ -1829,7 +1829,7 @@ P&auml;rt's &#8216;St John Passion&#8217;:</p>
 <tr><td>Passio domini nostri<br>
 Jesu Christi Secundum<br>Joannem</td></tr></table>
 
-<p class="dotbreak">� � � � �</p>
+<hr class="section-break" />
 
 <p class="normal">Text is normally displayed in an unembellished 
 but legible type intended to make reading paragraphs comfortable. Its 
