@@ -259,8 +259,10 @@ ul.indexlist li ul li ul li {font-size: 11pt; text-align: justify;
     display: contents;
     margin: 0 auto;
   }
+
   * { 
       margin: 0;
+      padding: 0;
     }
   
   div.page {
